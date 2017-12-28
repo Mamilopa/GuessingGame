@@ -9,3 +9,17 @@ h3{
     font-size: xx-large;
 }
 
+.guessButton{
+    font-family: "Comics";
+    width: 150px;
+    color:black;
+    background: palevioletred;
+}
+
+.backButton{
+    font-family: "Comics";
+    width: 150px;
+
+    color:black;
+    background: bisque ;
+}

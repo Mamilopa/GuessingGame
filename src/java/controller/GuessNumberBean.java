@@ -28,7 +28,7 @@ public class GuessNumberBean implements Serializable {
         } else if (userGuess < RANDOMNUMBER) {
             return "Number is too low";
         } else {
-            return "Number is way too high";
+            return "Number is too high";
         }
 
     }
