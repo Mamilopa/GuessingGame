@@ -8,9 +8,9 @@
     </h:head>
     <h:body>
         <h:form>
-            <h:graphicImage value ="resources/img/Duke.gif"/><br/>
+            <h:graphicImage value ="#{guessNumberBean.image}"/><br/>
             <h3>
-        <h:outputText value="#{guessNumberBean.response}"/><br/>
+                <h:outputText value="#{guessNumberBean.response}"/><br/>
         <h:commandButton value="Back" action="index"/>
             </h3>
         

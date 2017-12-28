@@ -7,32 +7,40 @@ import javax.enterprise.context.SessionScoped;
 
 @Named(value = "guessNumberBean")//how we refer to this class from xhtml
 @SessionScoped
-public class GuessNumberBean implements Serializable{
-private final int RANDOMNUMBER;
-private int max=10;
-private int min=1;
-private int userGuess;
-private String response;
+public class GuessNumberBean implements Serializable {
 
-public GuessNumberBean () {
-        Random random=new Random();
-        RANDOMNUMBER =random.nextInt(max)+1;
+    private final int RANDOMNUMBER;
+    private int max = 10;
+    private int min = 1;
+    private int userGuess;
+    private String response;
+    private String image;
+
+    public GuessNumberBean() {
+        Random random = new Random();
+        RANDOMNUMBER = random.nextInt(max) + 1;
     }
 
+    public String getResponse() {
 
-  public String getResponse() {
-      
-      if(userGuess==RANDOMNUMBER){
-          return "You are right!";
-      }
-      else if(userGuess<RANDOMNUMBER){
-          return "Number is too low";
-          }
-      else{
-          return "Number is way too high";
-      }
-      
-  } 
+        if (userGuess == RANDOMNUMBER) {
+            return "You are right!";
+        } else if (userGuess < RANDOMNUMBER) {
+            return "Number is too low";
+        } else {
+            return "Number is way too high";
+        }
+
+    }
+
+    public String getImage() {
+
+        if (userGuess == RANDOMNUMBER) {
+            return "resources/img/correct.gif";
+        } else {
+            return "resources/img/wrong.gif";
+        }
+    }
 
     public int getMax() {
         return max;
@@ -57,6 +65,5 @@ public GuessNumberBean () {
     public void setUserGuess(int userGuess) {
         this.userGuess = userGuess;
     }
-  
 
 }
