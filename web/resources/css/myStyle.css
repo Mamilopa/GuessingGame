@@ -1,5 +1,5 @@
 body{
-    font-family: "Arial Bold";
+    font-family: "Arial";
     width: 1500px;
     text-align: center;
     color: whitesmoke;
@@ -10,16 +10,21 @@ h3{
 }
 
 .guessButton{
-    font-family: "Comics";
+    font-family: "Arial";
     width: 150px;
     color:black;
     background: palevioletred;
 }
 
 .backButton{
-    font-family: "Comics";
+    font-family: "Arial";
     width: 150px;
-
     color:black;
     background: bisque ;
+}
+.againButton{
+    font-family: "Arial";
+    width: 150px;
+    color:black;
+    background: darkgray;
 }

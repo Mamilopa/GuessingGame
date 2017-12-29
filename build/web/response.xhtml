@@ -13,7 +13,8 @@
             <h3>
                 <h:outputText value="#{guessNumberBean.response}"/><br/>
             </h3>
-        <p:commandButton id="backButton" styleClass ="backButton" value="Back" action="index"/>
+        <p:commandButton id="backButton" styleClass ="backButton" value="Guess again" action="index"/>
+        <p:commandButton id="againButton" styleClass ="againButton" value="Restart" action="#{guessNumberBean.reset}"/>
         
         </h:form>
     </h:body>
